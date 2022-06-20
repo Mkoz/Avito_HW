@@ -21,15 +21,15 @@ public:
     ~FileHandler();
 
     void init();
-    inline const off_t& size() { return _stats.st_size;};
+    inline const off_t& size() { return _current_size;};
     // TODO implement more complex line navigation
-    const char* get_next_line();
     inline const char* get_full_content() { return _mem_magic_ptr;};
 
 
 private:
     int _file_desc;
     struct stat _stats;
+    off_t _current_size;
 
     // NOTE _file_name might be removed and some stack space can be saved, added just for making exception more informative
     std::string _file_name;

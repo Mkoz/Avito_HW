@@ -21,6 +21,7 @@ public:
     // TODO create print_to_file()
     void print();
     inline const char* get() { return _f.get_full_content();};
+    inline const std::map<std::string, int>& get_map() { return *_o_map;};
     inline const size_t size() {return _o_map->size();};
     void load_file();
     void calculate_word_freq();

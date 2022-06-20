@@ -33,20 +33,9 @@ void FileHandler::init()
     if (_mem_magic_ptr == MAP_FAILED) {
         throw std::runtime_error("Cannot map file: " + _file_name + " to memory");
     }
+    _current_size = _stats.st_size;
 }
 
-const char* FileHandler::get_next_line()
-{
-    while (_mem_magic_ptr && size() != 0)
-    {
-        if ((_mem_magic_ptr = static_cast<const char *>(memchr(_mem_magic_ptr, _line_sep, size()))))
-        {
-            return ++_mem_magic_ptr;
-        }
-
-    }
-    return nullptr;
-}
 
 
 
