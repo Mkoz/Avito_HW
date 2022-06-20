@@ -1,7 +1,7 @@
-Finale result:
-D:\CLionProjects\Avito_HW\cmake-build-debug\Avito_HW.exe
-/cygdrive/d/CLionProjects/Avito_HW/main.cpp:23 ::int main() d.size() is 213637
-/cygdrive/d/CLionProjects/Avito_HW/main.cpp:24 ::int main() Oh, So long: 5362.65 milliseconds
+Finale result:<br>
+D:\CLionProjects\Avito_HW\cmake-build-debug\Avito_HW.exe<br>
+/cygdrive/d/CLionProjects/Avito_HW/main.cpp:23 ::int main() d.size() is 213637<br>
+/cygdrive/d/CLionProjects/Avito_HW/main.cpp:24 ::int main() Oh, So long: 5362.65 milliseconds<br>
 
 Pay your attention to build flags -O2 allow to get such speed, without optimization it takes 2-3 times longer
 
@@ -13,8 +13,8 @@ Solution description:
 
 Gtest has been used for self check.
 
-Project structure:
-|- main.cpp - main execution and time calculation
-|- files/ - provided files
-|- service/ - main implementation
-|- tests/ - tests implementation
+Project structure:<br>
+|- main.cpp - main execution and time calculation<br>
+|- files/ - provided files ( cannot load such big files, but locally they are stored here)<br>
+|- service/ - main implementation<br>
+|- tests/ - tests implementation<br>
